@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title> NuStars Haitian Cuisine</title>
+		<link href="nu_stars_layout.css" rel="stylesheet"/>
+		<link href="nu_stars_styles.css" rel="stylesheet"/>
+		<link href="nustars_order1.css" rel="stylesheet"/>
+		<script type="text/javascript" src="nustars_order.js" async></script>
+      <script type="text/javascript" src="pass.js" async></script>
+    
+	</head>
+	<body>
+		<header>
+			<section>
+         <form id="memberForm" method="post" action="">
+            <label for="username">Member Name</label>
+            <input id="username" name="user" type="text" />
+            <label for="password">Password</label>
+            <input type="password" id="password" name="pwd" />
+            <input type="submit" id="login" value="LOGIN" />
+
+         </form>
+      </section>
+		<img src="logo.png" alt="NuStars Haitian Cusine" id="logoimg" />
+		<div class="topright">
+			<nav>
+				<ul>
+					<li> <a href="home.html"> HOME </a> </li>
+					<li> <a href= "menu.html"> MENU </a> </li>
+					<li> <a href= "store.html"> STORE </a> </li>
+					<li> <a href="events.html"> EVENTS </a> </li>
+					<li> <a href="gallery.html"> GALLERY </a> </li>
+				</ul>
+			</nav>
+		</div>
+		<hr>
+		</header>
+
+	<section id="summary">
+      <h1> Diri Djon-Djon</h1>
+      <img src="black_rice.png" alt=""/>
+     
+   </section>
+
+
+   		<section id="orderSection">
+      <form id="orderForm" name="orderForm" action="nustars_payment.html" method="get">
+        
+        <table id="orderTable">
+           <caption>Product Order</caption>
+           <tr>
+              <td colspan="3">
+                 <input type="text" id="orderDate" name="orderDate" readonly />
+              </td>
+           </tr>
+           <tr>
+              <td>
+                 <label for="model"> Size </label>
+                 <select name="model" id="model">
+                    <option value="8.99"> Small ($8.99)</option>
+                    <option value="9.99" selected> Medium ($9.99)</option>
+                    <option value="11.99"> Large ($11.99)</option>
+                 </select>   
+                 <input type="hidden" id="modelName" name="modelName" />
+              </td>
+              <td class="rightA">
+                 <label for="qty">Qty</label>
+                 <select name="qty" id="qty">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option><option value="3">3</option>
+                    <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                    <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                    <option value="10">10</option>
+                 </select>   
+              </td>                 
+              <td>
+                 <input type="text" name="initialCost" id="initialCost" size="10" readonly />
+              </td>
+           </tr>
+           <tr>
+              <td colspan="2"> 
+                 <fieldset>
+                    <legend> Sides </legend>
+                    <label><input type="radio" id="plan_0" name="protection" value="0.99" checked /> Spice ($0.99)</label>
+                    <label><input type="radio" id="plan_1" name="protection" value="2.50" /> 4-pc Plaintain ($2.50)</label>   
+                    <label><input type="radio" id="plan_2" name="protection" value="2.99" /> Salad ($2.99)</label> 
+                    <label><input type="radio" id="plan_3" name="protection" value="3.50"  /> Bowl of Legume ($3.50)</label>
+                 </fieldset>
+                 <input type="hidden" id="protectionName" name="protectionName" />
+              </td>
+              <td>
+                 <input type="text" name="protectionCost" id="protectionCost" size="10" readonly />
+              </td>
+           </tr>        
+           <tr>
+              <td colspan="2" class="rightA">Subtotal</td>
+              <td class="outcell">
+                 <input type="text" name="subtotal" id="subtotal" size="10" readonly />
+              </td>
+           </tr>
+
+           <tr>
+              <td colspan="2" class="rightA">Tax (8%)</td>
+              <td>
+                 <input type="text" name="salesTax" id="salesTax" size="10" readonly />
+              </td>
+           </tr>
+
+           <tr>
+              <td colspan="2" class="rightA">TOTAL</td>
+              <td>
+                 <input type="text" name="totalCost" id="totalCost" size="10" readonly />
+              </td>
+           </tr>
+        </table>
+        <input type="submit" id="buttonAdd" value="add to cart" />
+
+      </form>
+   </section>
+
+		<footer>
+			<address>
+				NuStars Haitian Cuisine &#8226; 123 Flatbush Ave &#8226; Brooklyn, Ny
+	      11235 &#8226; 347-777-2877
+			</address>
+	</footer>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+
+div#bigImg {
+	width: 70%;
+	margin: auto;
+
+}
+
+div#bigImg img {
+	
+	min-height: 800px;
+	min-width: 900px;
+	max-width: 900px;
+	max-height: 800px;
+
+}
+
+.row {
+	margin: auto;
+	padding-bottom: 50px;
+}
+
+.column {
+	margin: auto;
+	width: 100%;
+	padding-left: 170px;
+
+}
+.column img {
+	width: 13.33%;
+	float: left;
+	display: block;
+	min-height: 100px;
+	min-width: 100px;
+	padding: 2px;
+	border: solid black;
+	
+}
+
+
+
+
+
+
